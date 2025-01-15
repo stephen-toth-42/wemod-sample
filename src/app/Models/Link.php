@@ -33,5 +33,6 @@ class Link extends Model
         $this->fill([
             'hits' => $this->getOriginal('hits')+1,
         ]);
+        return $this;
     }
 }
