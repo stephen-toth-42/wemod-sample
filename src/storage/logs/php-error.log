@@ -1,0 +1,563 @@
+[14-Jan-2025 11:37:36] NOTICE: fpm is running, pid 106
+[14-Jan-2025 11:37:36] NOTICE: ready to handle connections
+[14-Jan-2025 11:37:36] NOTICE: systemd monitor interval set to 10000ms
+[14-Jan-2025 11:51:32] NOTICE: fpm is running, pid 56
+[14-Jan-2025 11:51:32] NOTICE: ready to handle connections
+[14-Jan-2025 11:51:32] NOTICE: systemd monitor interval set to 10000ms
+[14-Jan-2025 11:53:10 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:10 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:15 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:15 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:16 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:16 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:17 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:17 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:17 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:17 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:17 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:17 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:21 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:21 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:33 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:33 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:35 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:35 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:36 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:36 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:36 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:36 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:36 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#16 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 11:53:36 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/sample/src/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied
+The exception occurred while attempting to log: file_put_contents(/var/www/sample/src/storage/framework/views/5141b70d4c60f7f214cb327d4e9a1f1b.php): Failed to open stream: Permission denied
+Context: {"exception":{}} in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:156
+Stack trace:
+#0 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(44): Monolog\Handler\StreamHandler->write()
+#1 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(391): Monolog\Handler\AbstractProcessingHandler->handle()
+#2 /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Logger.php(646): Monolog\Logger->addRecord()
+#3 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(184): Monolog\Logger->error()
+#4 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/Logger.php(97): Illuminate\Log\Logger->writeLog()
+#5 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(701): Illuminate\Log\Logger->error()
+#6 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(380): Illuminate\Log\LogManager->error()
+#7 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(343): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#8 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(901): Illuminate\Foundation\Exceptions\Handler->report()
+#9 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(815): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#10 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(706): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#11 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(594): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#12 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(225): Illuminate\Foundation\Exceptions\Handler->render()
+#13 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(202): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#14 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(238): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#15 /var/www/sample/src/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(290): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#16 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#17 {main}
+  thrown in /var/www/sample/src/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 156
+[14-Jan-2025 12:22:47] NOTICE: fpm is running, pid 13
+[14-Jan-2025 12:22:47] NOTICE: ready to handle connections
+[14-Jan-2025 12:22:47] NOTICE: systemd monitor interval set to 10000ms
+[14-Jan-2025 12:24:37] NOTICE: fpm is running, pid 14
+[14-Jan-2025 12:24:37] NOTICE: ready to handle connections
+[14-Jan-2025 12:24:37] NOTICE: systemd monitor interval set to 10000ms
+[14-Jan-2025 14:31:02] NOTICE: fpm is running, pid 61
+[14-Jan-2025 14:31:02] NOTICE: ready to handle connections
+[14-Jan-2025 14:31:02] NOTICE: systemd monitor interval set to 10000ms
+[14-Jan-2025 15:27:41] NOTICE: fpm is running, pid 43
+[14-Jan-2025 15:27:41] NOTICE: ready to handle connections
+[14-Jan-2025 15:27:41] NOTICE: systemd monitor interval set to 10000ms
+[14-Jan-2025 17:34:49 UTC] PHP Fatal error:  A void function must not return a value in /var/www/sample/src/app/Http/Controllers/IngestController.php on line 20
+[14-Jan-2025 17:35:00 UTC] PHP Fatal error:  A void function must not return a value in /var/www/sample/src/app/Http/Controllers/IngestController.php on line 20
+[14-Jan-2025 17:35:15 UTC] PHP Fatal error:  A void function must not return a value in /var/www/sample/src/app/Http/Controllers/IngestController.php on line 20
+[14-Jan-2025 17:35:56 UTC] PHP Fatal error:  A void function must not return a value in /var/www/sample/src/app/Http/Controllers/IngestController.php on line 20
+[14-Jan-2025 17:38:30 UTC] PHP Fatal error:  A void function must not return a value in /var/www/sample/src/app/Http/Controllers/IngestController.php on line 21

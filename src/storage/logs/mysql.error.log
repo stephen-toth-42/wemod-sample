@@ -1,0 +1,332 @@
+2025-01-14 11:51:20 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 13
+2025-01-14 11:51:20 0 [Note] InnoDB: Uses event mutexes
+2025-01-14 11:51:20 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2025-01-14 11:51:20 0 [Note] InnoDB: Number of pools: 1
+2025-01-14 11:51:20 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2025-01-14 11:51:20 0 [Note] mysqld: O_TMPFILE is not supported on /var/tmp (disabling future attempts)
+2025-01-14 11:51:20 0 [Note] InnoDB: Using Linux native AIO
+2025-01-14 11:51:20 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2025-01-14 11:51:20 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-01-14 11:51:20 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=45079,45079
+2025-01-14 11:51:20 0 [Note] InnoDB: 128 rollback segments are active.
+2025-01-14 11:51:20 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-01-14 11:51:20 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-01-14 11:51:20 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-01-14 11:51:20 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2025-01-14 11:51:20 0 [Note] InnoDB: 10.5.25 started; log sequence number 45091; transaction id 20
+2025-01-14 11:51:20 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 11:51:20 0 [Note] InnoDB: Loading buffer pool(s) from /var/www/sample/data/ib_buffer_pool
+2025-01-14 11:51:20 0 [Note] Server socket created on IP: '::'.
+2025-01-14 11:51:20 0 [Note] InnoDB: Buffer pool(s) load completed at 250114 11:51:20
+2025-01-14 11:51:20 0 [Note] Reading of all Master_info entries succeeded
+2025-01-14 11:51:20 0 [Note] Added new Master_info '' to hash table
+2025-01-14 11:51:20 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.5.25-MariaDB'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MariaDB Server
+2025-01-14 11:54:49 3 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:57:17 5 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:57:19 6 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:57:19 7 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:57:20 8 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:57:20 9 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:57:20 10 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:57:20 11 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:58:01 12 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:58:03 13 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:58:16 14 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:58:45 15 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:59:12 17 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:59:26 19 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 11:59:44 20 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:01:30 22 [Warning] Access denied for user ''@'localhost' to database 'sample'
+2025-01-14 12:01:31 23 [Warning] Access denied for user ''@'localhost' to database 'sample'
+2025-01-14 12:01:40 24 [Warning] Access denied for user ''@'localhost' to database 'sample'
+2025-01-14 12:01:53 25 [Warning] Access denied for user ''@'localhost' to database 'sample'
+2025-01-14 12:02:06 26 [Warning] Access denied for user ''@'localhost' to database 'sample'
+2025-01-14 12:02:35 27 [Warning] Access denied for user ''@'localhost' to database 'sample'
+2025-01-14 12:03:18 0 [Note] /usr/sbin/mysqld (initiated by: unknown): Normal shutdown
+2025-01-14 12:03:18 0 [Note] InnoDB: FTS optimize thread exiting.
+2025-01-14 12:03:18 0 [Note] InnoDB: Starting shutdown...
+2025-01-14 12:03:18 0 [Note] InnoDB: Dumping buffer pool(s) to /var/www/sample/data/ib_buffer_pool
+2025-01-14 12:03:18 0 [Note] InnoDB: Buffer pool(s) dump completed at 250114 12:03:18
+2025-01-14 12:03:19 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-01-14 12:03:19 0 [Note] InnoDB: Shutdown completed; log sequence number 45115; transaction id 21
+2025-01-14 12:03:19 0 [Note] Event Scheduler: Purging the queue. 0 events
+2025-01-14 12:03:19 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2025-01-14 12:13:29 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 872
+2025-01-14 12:13:29 0 [ERROR] mysqld: File '/var/www/sample/data/aria_log_control' not found (Errcode: 13 "Permission denied")
+2025-01-14 12:13:29 0 [ERROR] mysqld: Got error 'Can't open file' when trying to use aria control file '/var/www/sample/data/aria_log_control'
+2025-01-14 12:13:29 0 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2025-01-14 12:13:29 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2025-01-14 12:13:29 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2025-01-14 12:13:29 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2025-01-14 12:13:29 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 12:13:29 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+2025-01-14 12:13:29 0 [ERROR] Failed to initialize plugins.
+2025-01-14 12:13:29 0 [ERROR] Aborting
+2025-01-14 12:13:38 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 895
+2025-01-14 12:13:38 0 [ERROR] mysqld: File '/var/www/sample/data/aria_log_control' not found (Errcode: 13 "Permission denied")
+2025-01-14 12:13:38 0 [ERROR] mysqld: Got error 'Can't open file' when trying to use aria control file '/var/www/sample/data/aria_log_control'
+2025-01-14 12:13:38 0 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2025-01-14 12:13:38 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2025-01-14 12:13:38 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2025-01-14 12:13:38 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2025-01-14 12:13:38 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 12:13:38 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+2025-01-14 12:13:38 0 [ERROR] Failed to initialize plugins.
+2025-01-14 12:13:38 0 [ERROR] Aborting
+2025-01-14 12:14:23 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 924
+2025-01-14 12:14:23 0 [ERROR] mysqld: File '/var/www/sample/data/aria_log_control' not found (Errcode: 13 "Permission denied")
+2025-01-14 12:14:23 0 [ERROR] mysqld: Got error 'Can't open file' when trying to use aria control file '/var/www/sample/data/aria_log_control'
+2025-01-14 12:14:23 0 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2025-01-14 12:14:23 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2025-01-14 12:14:23 0 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2025-01-14 12:14:23 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2025-01-14 12:14:23 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 12:14:23 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+2025-01-14 12:14:23 0 [ERROR] Failed to initialize plugins.
+2025-01-14 12:14:23 0 [ERROR] Aborting
+2025-01-14 12:15:00 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 954
+2025-01-14 12:15:00 0 [Note] InnoDB: Uses event mutexes
+2025-01-14 12:15:00 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2025-01-14 12:15:00 0 [Note] InnoDB: Number of pools: 1
+2025-01-14 12:15:00 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2025-01-14 12:15:00 0 [Note] mysqld: O_TMPFILE is not supported on /var/tmp (disabling future attempts)
+2025-01-14 12:15:00 0 [Note] InnoDB: Using Linux native AIO
+2025-01-14 12:15:00 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2025-01-14 12:15:00 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-01-14 12:15:00 0 [Note] InnoDB: 128 rollback segments are active.
+2025-01-14 12:15:00 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-01-14 12:15:00 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-01-14 12:15:00 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2025-01-14 12:15:00 0 [Note] InnoDB: 10.5.25 started; log sequence number 45079; transaction id 20
+2025-01-14 12:15:00 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 12:15:00 0 [Note] InnoDB: Loading buffer pool(s) from /var/www/sample/data/ib_buffer_pool
+2025-01-14 12:15:00 0 [Note] InnoDB: Buffer pool(s) load completed at 250114 12:15:00
+2025-01-14 12:15:00 0 [Note] Server socket created on IP: '::'.
+2025-01-14 12:15:00 0 [Note] Reading of all Master_info entries succeeded
+2025-01-14 12:15:00 0 [Note] Added new Master_info '' to hash table
+2025-01-14 12:15:00 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.5.25-MariaDB'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MariaDB Server
+2025-01-14 12:15:07 4 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:15:32 5 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:16:16 7 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:16:17 8 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:16:17 9 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:16:17 10 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:16:17 11 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:16:24 12 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:16:44 14 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:16:44 15 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:16:50 16 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:19:03 22 [Warning] Access denied for user 'root'@'localhost'
+2025-01-14 12:22:47 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 10
+2025-01-14 12:22:47 0 [Note] mysqld: Aria engine: starting recovery
+recovered pages: 0% 13% 24% 36% 47% 57% 67% 77% 87% 100% (0.0 seconds); tables to flush: 3 2 1 0
+ (0.0 seconds); 
+2025-01-14 12:22:47 0 [Note] mysqld: Aria engine: recovery done
+2025-01-14 12:22:47 0 [Note] InnoDB: Uses event mutexes
+2025-01-14 12:22:47 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2025-01-14 12:22:47 0 [Note] InnoDB: Number of pools: 1
+2025-01-14 12:22:47 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2025-01-14 12:22:47 0 [Note] mysqld: O_TMPFILE is not supported on /var/tmp (disabling future attempts)
+2025-01-14 12:22:47 0 [Note] InnoDB: Using Linux native AIO
+2025-01-14 12:22:47 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2025-01-14 12:22:47 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-01-14 12:22:47 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=45079,45079
+2025-01-14 12:22:47 0 [Note] InnoDB: Starting final batch to recover 52 pages from redo log.
+2025-01-14 12:22:47 0 [Note] InnoDB: 128 rollback segments are active.
+2025-01-14 12:22:47 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-01-14 12:22:47 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-01-14 12:22:47 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-01-14 12:22:47 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2025-01-14 12:22:47 0 [Note] InnoDB: 10.5.25 started; log sequence number 82211; transaction id 140
+2025-01-14 12:22:47 0 [Note] InnoDB: Loading buffer pool(s) from /var/www/sample/data/ib_buffer_pool
+2025-01-14 12:22:47 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 12:22:47 0 [Note] InnoDB: Buffer pool(s) load completed at 250114 12:22:47
+2025-01-14 12:22:47 0 [Note] Server socket created on IP: '::'.
+2025-01-14 12:22:47 0 [Note] Reading of all Master_info entries succeeded
+2025-01-14 12:22:47 0 [Note] Added new Master_info '' to hash table
+2025-01-14 12:22:47 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.5.25-MariaDB'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MariaDB Server
+2025-01-14 12:24:37 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 10
+2025-01-14 12:24:37 0 [Note] InnoDB: Uses event mutexes
+2025-01-14 12:24:37 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2025-01-14 12:24:37 0 [Note] InnoDB: Number of pools: 1
+2025-01-14 12:24:37 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2025-01-14 12:24:37 0 [Note] mysqld: O_TMPFILE is not supported on /var/tmp (disabling future attempts)
+2025-01-14 12:24:37 0 [Note] InnoDB: Using Linux native AIO
+2025-01-14 12:24:37 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2025-01-14 12:24:37 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-01-14 12:24:37 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=45079,45079
+2025-01-14 12:24:37 0 [Note] InnoDB: Starting final batch to recover 52 pages from redo log.
+2025-01-14 12:24:37 0 [Note] InnoDB: 128 rollback segments are active.
+2025-01-14 12:24:37 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-01-14 12:24:37 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-01-14 12:24:37 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-01-14 12:24:37 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2025-01-14 12:24:37 0 [Note] InnoDB: 10.5.25 started; log sequence number 82546; transaction id 140
+2025-01-14 12:24:37 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 12:24:37 0 [Note] InnoDB: Loading buffer pool(s) from /var/www/sample/data/ib_buffer_pool
+2025-01-14 12:24:37 0 [Note] InnoDB: Buffer pool(s) load completed at 250114 12:24:37
+2025-01-14 12:24:37 0 [Note] Server socket created on IP: '::'.
+2025-01-14 12:24:37 0 [Note] Reading of all Master_info entries succeeded
+2025-01-14 12:24:37 0 [Note] Added new Master_info '' to hash table
+2025-01-14 12:24:37 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.5.25-MariaDB'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MariaDB Server
+2025-01-14 14:31:02 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 58
+2025-01-14 14:31:02 0 [Note] InnoDB: Uses event mutexes
+2025-01-14 14:31:02 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2025-01-14 14:31:02 0 [Note] InnoDB: Number of pools: 1
+2025-01-14 14:31:02 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2025-01-14 14:31:02 0 [Note] mysqld: O_TMPFILE is not supported on /var/tmp (disabling future attempts)
+2025-01-14 14:31:03 0 [Note] InnoDB: Using Linux native AIO
+2025-01-14 14:31:03 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2025-01-14 14:31:03 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-01-14 14:31:03 0 [Note] InnoDB: 128 rollback segments are active.
+2025-01-14 14:31:03 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-01-14 14:31:03 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-01-14 14:31:03 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2025-01-14 14:31:03 0 [Note] InnoDB: 10.5.25 started; log sequence number 45079; transaction id 20
+2025-01-14 14:31:03 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 14:31:03 0 [Note] InnoDB: Loading buffer pool(s) from /var/www/sample/data/ib_buffer_pool
+2025-01-14 14:31:03 0 [Note] InnoDB: Buffer pool(s) load completed at 250114 14:31:03
+2025-01-14 14:31:03 0 [Note] Server socket created on IP: '::'.
+2025-01-14 14:31:03 0 [Note] Reading of all Master_info entries succeeded
+2025-01-14 14:31:03 0 [Note] Added new Master_info '' to hash table
+2025-01-14 14:31:03 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.5.25-MariaDB'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MariaDB Server
+2025-01-14 14:32:49 3 [Warning] Access denied for user ''@'localhost' to database 'sample'
+2025-01-14 15:24:09 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 52
+2025-01-14 15:24:09 0 [Note] InnoDB: Uses event mutexes
+2025-01-14 15:24:09 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2025-01-14 15:24:09 0 [Note] InnoDB: Number of pools: 1
+2025-01-14 15:24:09 0 [Note] InnoDB: Using ARMv8 crc32 + pmull instructions
+2025-01-14 15:24:09 0 [Note] InnoDB: Using Linux native AIO
+2025-01-14 15:24:09 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2025-01-14 15:24:09 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-01-14 15:24:09 0 [Note] InnoDB: 128 rollback segments are active.
+2025-01-14 15:24:09 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-01-14 15:24:09 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-01-14 15:24:09 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2025-01-14 15:24:09 0 [Note] InnoDB: 10.5.25 started; log sequence number 45079; transaction id 20
+2025-01-14 15:24:09 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 15:24:09 0 [Note] InnoDB: Loading buffer pool(s) from /var/www/sample/data/ib_buffer_pool
+2025-01-14 15:24:09 0 [Note] InnoDB: Buffer pool(s) load completed at 250114 15:24:09
+2025-01-14 15:24:09 0 [Note] Server socket created on IP: '::'.
+2025-01-14 15:24:09 0 [Note] Reading of all Master_info entries succeeded
+2025-01-14 15:24:09 0 [Note] Added new Master_info '' to hash table
+2025-01-14 15:24:09 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.5.25-MariaDB'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MariaDB Server
+2025-01-14 15:24:13 7 [Warning] Access denied for user ''@'localhost' to database 'sample'
+2025-01-14 15:24:50 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 10
+2025-01-14 15:24:50 0 [Note] mysqld: Aria engine: starting recovery
+recovered pages: 0% 20% 68% 91% 100% (0.0 seconds); tables to flush: 1 0
+ (0.0 seconds); 
+2025-01-14 15:24:50 0 [Note] mysqld: Aria engine: recovery done
+2025-01-14 15:24:50 0 [Note] InnoDB: Uses event mutexes
+2025-01-14 15:24:50 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2025-01-14 15:24:50 0 [Note] InnoDB: Number of pools: 1
+2025-01-14 15:24:50 0 [Note] InnoDB: Using ARMv8 crc32 + pmull instructions
+2025-01-14 15:24:50 0 [Note] InnoDB: Using Linux native AIO
+2025-01-14 15:24:50 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2025-01-14 15:24:50 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-01-14 15:24:50 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=45079,45079
+2025-01-14 15:24:50 0 [Note] InnoDB: 128 rollback segments are active.
+2025-01-14 15:24:50 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-01-14 15:24:50 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-01-14 15:24:50 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-01-14 15:24:50 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2025-01-14 15:24:50 0 [Note] InnoDB: 10.5.25 started; log sequence number 45091; transaction id 20
+2025-01-14 15:24:50 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 15:24:50 0 [Note] InnoDB: Loading buffer pool(s) from /var/www/sample/data/ib_buffer_pool
+2025-01-14 15:24:50 0 [Note] InnoDB: Buffer pool(s) load completed at 250114 15:24:50
+2025-01-14 15:24:50 0 [Note] Server socket created on IP: '::'.
+2025-01-14 15:24:50 0 [Note] Reading of all Master_info entries succeeded
+2025-01-14 15:24:50 0 [Note] Added new Master_info '' to hash table
+2025-01-14 15:24:50 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.5.25-MariaDB'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MariaDB Server
+2025-01-14 15:24:54 7 [Warning] Access denied for user ''@'localhost' to database 'sample'
+2025-01-14 15:26:06 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 10
+2025-01-14 15:26:06 0 [Note] mysqld: Aria engine: starting recovery
+recovered pages: 0% 50% 100% (0.0 seconds); tables to flush: 1 0
+ (0.0 seconds); 
+2025-01-14 15:26:06 0 [Note] mysqld: Aria engine: recovery done
+2025-01-14 15:26:06 0 [Note] InnoDB: Uses event mutexes
+2025-01-14 15:26:06 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2025-01-14 15:26:06 0 [Note] InnoDB: Number of pools: 1
+2025-01-14 15:26:06 0 [Note] InnoDB: Using ARMv8 crc32 + pmull instructions
+2025-01-14 15:26:06 0 [Note] InnoDB: Using Linux native AIO
+2025-01-14 15:26:06 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2025-01-14 15:26:06 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-01-14 15:26:06 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=45103,45103
+2025-01-14 15:26:06 0 [Note] InnoDB: 128 rollback segments are active.
+2025-01-14 15:26:06 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-01-14 15:26:06 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-01-14 15:26:06 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-01-14 15:26:06 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2025-01-14 15:26:06 0 [Note] InnoDB: 10.5.25 started; log sequence number 45115; transaction id 20
+2025-01-14 15:26:06 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 15:26:06 0 [Note] InnoDB: Loading buffer pool(s) from /var/www/sample/data/ib_buffer_pool
+2025-01-14 15:26:06 0 [Note] InnoDB: Buffer pool(s) load completed at 250114 15:26:06
+2025-01-14 15:26:06 0 [Note] Server socket created on IP: '::'.
+2025-01-14 15:26:06 0 [Note] Reading of all Master_info entries succeeded
+2025-01-14 15:26:06 0 [Note] Added new Master_info '' to hash table
+2025-01-14 15:26:06 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.5.25-MariaDB'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MariaDB Server
+2025-01-14 15:26:10 7 [Warning] Access denied for user ''@'localhost' to database 'sample'
+2025-01-14 15:26:26 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 10
+2025-01-14 15:26:26 0 [Note] mysqld: Aria engine: starting recovery
+recovered pages: 0% 50% 100% (0.0 seconds); tables to flush: 1 0
+ (0.0 seconds); 
+2025-01-14 15:26:26 0 [Note] mysqld: Aria engine: recovery done
+2025-01-14 15:26:26 0 [Note] InnoDB: Uses event mutexes
+2025-01-14 15:26:26 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2025-01-14 15:26:26 0 [Note] InnoDB: Number of pools: 1
+2025-01-14 15:26:26 0 [Note] InnoDB: Using ARMv8 crc32 + pmull instructions
+2025-01-14 15:26:26 0 [Note] InnoDB: Using Linux native AIO
+2025-01-14 15:26:26 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2025-01-14 15:26:26 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-01-14 15:26:26 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=45127,45127
+2025-01-14 15:26:26 0 [Note] InnoDB: 128 rollback segments are active.
+2025-01-14 15:26:26 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-01-14 15:26:26 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-01-14 15:26:26 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-01-14 15:26:26 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2025-01-14 15:26:26 0 [Note] InnoDB: 10.5.25 started; log sequence number 45139; transaction id 20
+2025-01-14 15:26:26 0 [Note] InnoDB: Loading buffer pool(s) from /var/www/sample/data/ib_buffer_pool
+2025-01-14 15:26:26 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 15:26:26 0 [Note] InnoDB: Buffer pool(s) load completed at 250114 15:26:26
+2025-01-14 15:26:26 0 [Note] Server socket created on IP: '::'.
+2025-01-14 15:26:26 0 [Note] Reading of all Master_info entries succeeded
+2025-01-14 15:26:26 0 [Note] Added new Master_info '' to hash table
+2025-01-14 15:26:26 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.5.25-MariaDB'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MariaDB Server
+2025-01-14 15:26:30 7 [Warning] Access denied for user ''@'localhost' to database 'sample'
+2025-01-14 15:27:37 0 [Note] Starting MariaDB 10.5.25-MariaDB source revision 29c185bd771ac441121468b3850d6dc8d13b8a1f as process 10
+2025-01-14 15:27:37 0 [Note] mysqld: Aria engine: starting recovery
+recovered pages: 0% 50% 100% (0.0 seconds); tables to flush: 1 0
+ (0.0 seconds); 
+2025-01-14 15:27:37 0 [Note] mysqld: Aria engine: recovery done
+2025-01-14 15:27:37 0 [Note] InnoDB: Uses event mutexes
+2025-01-14 15:27:37 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2025-01-14 15:27:37 0 [Note] InnoDB: Number of pools: 1
+2025-01-14 15:27:37 0 [Note] InnoDB: Using ARMv8 crc32 + pmull instructions
+2025-01-14 15:27:37 0 [Note] InnoDB: Using Linux native AIO
+2025-01-14 15:27:37 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2025-01-14 15:27:37 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-01-14 15:27:37 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=45151,45151
+2025-01-14 15:27:37 0 [Note] InnoDB: 128 rollback segments are active.
+2025-01-14 15:27:37 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-01-14 15:27:37 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-01-14 15:27:37 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-01-14 15:27:37 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2025-01-14 15:27:37 0 [Note] InnoDB: 10.5.25 started; log sequence number 45163; transaction id 20
+2025-01-14 15:27:37 0 [Note] InnoDB: Loading buffer pool(s) from /var/www/sample/data/ib_buffer_pool
+2025-01-14 15:27:37 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-01-14 15:27:37 0 [Note] InnoDB: Buffer pool(s) load completed at 250114 15:27:37
+2025-01-14 15:27:37 0 [Note] Server socket created on IP: '::'.
+2025-01-14 15:27:37 0 [Note] Reading of all Master_info entries succeeded
+2025-01-14 15:27:37 0 [Note] Added new Master_info '' to hash table
+2025-01-14 15:27:37 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '10.5.25-MariaDB'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MariaDB Server
