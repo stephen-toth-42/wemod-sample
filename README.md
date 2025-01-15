@@ -4,8 +4,7 @@ Sample code for Wemod take home challenge.
 1. Clone repo `https://github.com/stephen-toth-42/wemod-sample.git`
 2. `cd wemod-sample`
 3. Build Docker image `docker build -t sample-test:latest .`
-4. Run Docker container `docker run -d -p 8080:80 -p 3306:3306 -v ./src/data`
-4. Run Docker container `docker run -d -p 8080:80 -p 3306:3306 -v ./src/data sample-test:latest`
+4. Run Docker container `docker run -d -p 8080:80 -v ./src/data sample-test:latest`
 
 ### Sample Data
 Copy the following to a .csv file and either an API platform (Postman, Restfox) or CURL to upload the file to the API.
@@ -14,23 +13,6 @@ user,long_url
 company1,https://www.philadelphiaeagles.com/news/eagles-playoff-scenarios-road-to-victory-2024
 company2,https://disneyworld.disney.go.com/resorts/bay-lake-tower-at-contemporary/rates-rooms/
 ```
-
-## Backend Take Home Challenge
-Let us pretend we are a brand new startup with a simple mission, providing shortened URLs for enterprise companies. Below you will find our product requirements and technical specifications. Do your best to meet all requirements and document any assumptions made. This is the main code assessment in the WeMod interview process, so be sure to be proud of both the functionality and design of the code you submit.
-
-### Product Requirements
-- Users should be able to upload a batch of Long URLs to be shortened via a CSV file.
-- Short URLs should redirect the user to the Long URL destination.
-- Each visit to a Short URL should be tracked for analytics.
-- An endpoint to retrieve data about the Short URL, like the visit analytics.
-### Technical Specifications
-- Provide documentation that explains how to run the provided code and access the service in a local development environment.
-- Code should be clean, concise, and self-documenting.
-- PHP should be used; version 8.2 or greater.
-- The latest version of either Laravel or Symfony should be utilized.
-- Use the framework and language features to write well engineered code
-- Data should be persisted in a relational database.
-- Proper authentication is not required.
 
 ## Solution
 The approach focuses on making a backend API solution to the problem.
@@ -85,6 +67,25 @@ Returns JSON representing the URLs and the number of hits.
     ]
 }
 ```
+
+---
+
+## Backend Take Home Challenge
+Let us pretend we are a brand new startup with a simple mission, providing shortened URLs for enterprise companies. Below you will find our product requirements and technical specifications. Do your best to meet all requirements and document any assumptions made. This is the main code assessment in the WeMod interview process, so be sure to be proud of both the functionality and design of the code you submit.
+
+### Product Requirements
+- Users should be able to upload a batch of Long URLs to be shortened via a CSV file.
+- Short URLs should redirect the user to the Long URL destination.
+- Each visit to a Short URL should be tracked for analytics.
+- An endpoint to retrieve data about the Short URL, like the visit analytics.
+### Technical Specifications
+- Provide documentation that explains how to run the provided code and access the service in a local development environment.
+- Code should be clean, concise, and self-documenting.
+- PHP should be used; version 8.2 or greater.
+- The latest version of either Laravel or Symfony should be utilized.
+- Use the framework and language features to write well engineered code
+- Data should be persisted in a relational database.
+- Proper authentication is not required.
 
 ### Base Assumptions
 - Another team of frontend developers would create the UX for the system using the API
