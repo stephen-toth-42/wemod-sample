@@ -4,7 +4,7 @@ Sample code for Wemod take home challenge.
 1. Clone repo `https://github.com/stephen-toth-42/wemod-sample.git`
 2. `cd wemod-sample`
 3. Build Docker image `docker build -t sample-test:latest .`
-4. Run Docker container `docker run -d -p 8080:80 -v ./src/data sample-test:latest`
+4. Run Docker container `docker run -d -p 8080:80 -v ./src/data --name sample-test sample-test:latest`
 
 ### Sample Data
 Copy the following to a .csv file and either an API platform (Postman, Restfox) or CURL to upload the file to the API.
