@@ -4,7 +4,7 @@ Sample code for Wemod take home challenge.
 1. Clone repo `https://github.com/stephen-toth-42/wemod-sample.git`
 2. `cd wemod-sample`
 3. Build Docker image `docker build -t sample-test:latest .`
-4. Run Docker container `docker run -d -p 8080:80 -p 3306:3306 -v ./src/data
+4. Run Docker container `docker run -d -p 8080:80 -p 3306:3306 -v ./src/data`
 4. Run Docker container `docker run -d -p 8080:80 -p 3306:3306 -v ./src/data sample-test:latest`
 
 ### Sample Data
