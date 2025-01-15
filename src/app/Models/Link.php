@@ -28,7 +28,7 @@ class Link extends Model
         ];
     }
 
-    public function incrementHits(): void {
+    public function incrementHits(): Link {
         // Use getOriginal for hits to avoid accidental inflation prior to save
         $this->fill([
             'hits' => $this->getOriginal('hits')+1,
