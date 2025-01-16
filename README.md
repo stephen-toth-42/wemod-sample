@@ -4,23 +4,26 @@ Sample code for Wemod take home challenge.
 1. Clone repo `https://github.com/stephen-toth-42/wemod-sample.git`
 2. `cd wemod-sample`
 3. Build Docker image `docker build -t sample-test:latest .`
-4. Run Docker container `docker run -d -p 8080:80 -v ./src/data --name sample-test sample-test:latest`
-
-### Sample Data
-Copy the following to a .csv file and either an API platform (Postman, Restfox) or CURL to upload the file to the API.
-```
-user,long_url
-company1,https://www.philadelphiaeagles.com/news/eagles-playoff-scenarios-road-to-victory-2024
-company2,https://disneyworld.disney.go.com/resorts/bay-lake-tower-at-contemporary/rates-rooms/
-```
+4. Run Docker container `docker run --name sample-test -d -p 8080:80 -p 8081:3306 --mount "type=bind,source=$(pwd)/src,target=/var/www/sample/src" --mount "type=bind,source=$(pwd)/data,target=/var/www/sample/data" sample-test:latest`
+  - Note: ${pwd} may be replaced by the local directory of the project
+5. Use an API platform (Postman, Restfox, etc..) or CURL to upload the sample file
+  - `sample.csv` can be found in the project root
+  - `POST /api/v1/upload` : multipart form file upload with the file named `csv_file`
+  - CURL alternative (from project root): `curl -v -F csv_file=@./sample.csv http://127.0.0.1:8080/api/v1/upload`
+6. Visit a short_url from the response in step 5
+  - Browser will redirect to the long URL
+7. Use an API platform, browser or CURL to view analytics
+  - `GET /api/v1/analytics`
+8. Repeat steps 6 & 7 to see the `hits` value increment
 
 ## Solution
-The approach focuses on making a backend API solution to the problem.
 The approach focuses on making a backend API solution to the problem deployed within a Docker container.
 
 ### Endpoints
 #### POST /api/v1/upload
 Allows users to upload CSV files as files.
+##### Body
+- csv_file : multipart form file upload
 ##### Response
 An array of records including the short urls created.
 ```
@@ -97,6 +100,11 @@ Let us pretend we are a brand new startup with a simple mission, providing short
 - Use authentication to remove the need to specify users within the CSV
 
 ### Questions for Requirements
+- Are there any security constraints?
+  - Assumption: None were state in the requirements, so it is presumed low.
+- What is the definition of "short" for URLs?
+  - Assumption: They should be as short as possible (note that the solution uses the path `page` which could be shortened, but was left for clarity).
+  - Considerations: The solution relies on using autoincrementing values for the short URL, which is generally not a secure method.  This should be changed to another unique, non-guessable value based on the definition of "short".
 - How exactly should redirection be handled?
   - Assumptions: The visitors are using a web browser with the intent of being taken to the long URL by using the short URL.  The standard PHP `redirect()` function has been used to accomplish this cleanly and quickly.
 - What is the expected load or volume?
