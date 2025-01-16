@@ -6,6 +6,7 @@ Sample code for Wemod take home challenge.
 3. Build Docker image `docker build -t sample-test:latest .`
 4. Run Docker container `docker run --name sample-test -d -p 8080:80 -p 8081:3306 --mount "type=bind,source=$(pwd)/src,target=/var/www/sample/src" --mount "type=bind,source=$(pwd)/data,target=/var/www/sample/data" sample-test:latest`
   - Note: ${pwd} may be replaced by the local directory of the project
+  - Note: Local ports may be changed; however, the port returned by the app will be `8080` for short_urls as defined in the project `.env` file
 5. Use an API platform (Postman, Restfox, etc..) or CURL to upload the sample file
   - `sample.csv` can be found in the project root
   - `POST /api/v1/upload` : multipart form file upload with the file named `csv_file`
@@ -29,17 +30,12 @@ An array of records including the short urls created.
 ```
 [
     {
-        "user": "steve",
-        "long_url": "https://www.philadelphiaeagles.com/news/eagles-playoff-scenarios-road-to-victory-2024",
-        "short_url": "http://localhost/page/1",
-        "action": "created"
+        "user": string,
+        "long_url": string,
+        "short_url": string,
+        "action": string (created | existed)
     },
-    {
-        "user": "bob",
-        "long_url": "https://disneyworld.disney.go.com/resorts/bay-lake-tower-at-contemporary/rates-rooms/",
-        "short_url": "http://localhost/page/2",
-        "action": "created"
-    }
+    ...
 ]
 ```
 #### GET /page/{link_id}
@@ -54,20 +50,14 @@ Returns JSON representing the URLs and the number of hits.
 ##### Response
 ```
 {
-    "steve": [
+    "user": [
         {
-            "short_url": "http://localhost/page/1",
-            "long_url": "https://www.philadelphiaeagles.com/news/eagles-playoff-scenarios-road-to-victory-2024",
-            "hits": 2
+            "short_url": string,
+            "long_url": string,
+            "hits": integer
         }
     ],
-    "bob": [
-        {
-            "short_url": "http://localhost/page/2",
-            "long_url": "https://disneyworld.disney.go.com/resorts/bay-lake-tower-at-contemporary/rates-rooms/",
-            "hits": 0
-        }
-    ]
+    ...
 }
 ```
 
