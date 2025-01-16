@@ -101,7 +101,7 @@ Let us pretend we are a brand new startup with a simple mission, providing short
   - Assumptions: CSV uploading is a weekly or monthly occurrance for users.  The use of MySQL is sufficient for volume of ingestion which can be batched without immediate availability.  The use of the primary key of the `links` table as the short URL ensures quick reads during redirect.
   - Considerations: If the volume is expected to be higher, partitioning DB servers by user would increase availability, and a load-balancing auto-scaler for the PHP servers would allow for better response times.  If volume is significantly high, it may be advantageous to move the analytics to a NoSQL solution to accomodate faster writes with or without user-based partitioning.  It would also be possible to run ingestion of the CSV files during off hours or as lower priority processes.
 - How many users and how many URLs per user are expected?
-  - Assumptions: Similar to above, the expectations are assumed to be within the capabilities of the systems listed in teh technical specification.
+  - Assumptions: Similar to above, the expectations are assumed to be within the capabilities of the systems listed in the technical specification.
 - What is the nature of use for the short URLs?
   - Assumptions: Given the nature of the problem, it is assumed that this would be used for marketing and analytics, or click tracking.  Depending on the target of the effort, this could significantly influence decisions on scalability above.
 - How large the CSV files expected to be?
